@@ -1,25 +1,20 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html ng-app="headyApp">
 <head>
     <meta name="viewport" content="width=device-width">
     <base href="/">
     <title>HeadyJS SAT</title>
     <link rel="icon" href="Images/heady.png">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>-->
-    <script src="Scripts/angular.min.js"></script>
-    <script src="Scripts/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="Script.js"></script>
-    <link rel="stylesheet" href="Responsive.css">
+    <!--<script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>-->
 
-    <!--<base href="/">-->
-    <!--
-    <script src="Scripts/angular.min.js"></script>
-    <script src="Scripts/angular-route.min.js"></script>
-    -->
+    <link rel="stylesheet" href="Responsive.css">
 </head>
-<body>
-    <div class="wrapper" ng-app="headyApp">
+<body>   
+    <div class="wrapper">
         <div class="logo"><img src="Images/main_logo.png" alt="main logo" width="50" height="50"></div>
         <div class="bedroom"><a id="bedroom" href="index.html">BEDROOM</a></div>
         <div class="livingroom"><a id="livingroom" href="Rooms/livingroom.html">LIVING ROOM</a></div>
@@ -30,9 +25,9 @@
         <div class="like"><img src="Images/like.png" alt="like" width="25" height="25"></div>
         <div class="instagram"><img src="Images/instagram.png" alt="instagram" width="25" height="25"></div>
         <div class="verticaltext"><div id="text"></div></div>
-        <div class="design"><a id="design" href="details">DESIGN</a></div>
-        <div class="image"><ng-view></ng-view></div>
+        <div class="image" ng-view></div>
         <div class="price"></div>
+        <div class="design"><a id="design" href="details">DESIGN</a></div>
         <div class="description"><a id="description" href="description">DESCRIPTION</a></div>
         <div class="reviews"><a id="reviews" href="reviews">REVIEWS</a></div>
         <div class="related"><a id="related" href="related">RELATED</a></div>
@@ -41,8 +36,10 @@
         <div class="pinterest"><img src="Images/pinterest.png" alt="pinterest" width="20" height="20"></div>
         <div class="newsletter">NEWSLETTER</div>
     </div>
-    <!--
-        <div style="text-align: center">
+
+
+    
+        <!--<div style="text-align: center">
             <div style="display: inline-block">
                 <table>
                     <tr style="background-color: white">
@@ -70,16 +67,16 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center"><a id="details" href="#!details" onclick="changeText(this.id)">DETAILS</a></td>
+                                        <td style="text-align: center"><a id="details" href="details" onclick="changeText(this.id)">DETAILS</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center"><a id="description" href="#!description" onclick="changeText(this.id)">DESCRIPTION</a></td>
+                                        <td style="text-align: center"><a id="description" href="description" onclick="changeText(this.id)">DESCRIPTION</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center"><a id="reviews" href="#!reviews" onclick="changeText(this.id)">REVIEWS</a></td>
+                                        <td style="text-align: center"><a id="reviews" href="reviews" onclick="changeText(this.id)">REVIEWS</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center"><a id="customTab" href="#!customTab" onclick="changeText(this.id)">CUSTOM TABS</a></td>
+                                        <td style="text-align: center"><a id="customTab" href="customTab" onclick="changeText(this.id)">CUSTOM TABS</a></td>
                                     </tr>
                                     <tr>
                                         <td style="text-align: center">
@@ -100,7 +97,7 @@
                     </tr>
                 </table>
             </div>
-        </div>
-    -->
+        </div>-->
+    
 </body>
 </html>
